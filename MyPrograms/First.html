@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodabase Conectivity Program</title>
+    <style>
+        .container{
+            border: solid green ;
+            width: 450px;
+            height: 250px;
+            padding: 10px;
+            padding-left: 30px  ;
+            margin: auto;
+            margin-top: 100px;
+            background-color: aqua;
+            border-radius: 20px;
+            
+        }
+        .fields{
+            margin: 20px;
+            text-align: left;
+        }
+        h3{
+            color: red;
+        }
+        /* Change button color */
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: orange; /* Change to your desired color */
+            color: white; /* Text color */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        /* Change button color on hover */
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: darkorange; /* Change to your desired color on hover */
+        }
+    </style>
+</head>
+<body>
+    <form action="DBConnect.php" method="post">
+        
+        <div class="container">
+            <h3>Register Yourself Here</h3>
+            <div id="id" class="fields">
+                <label for="id">Enter Your Id</label>
+                <input type="text" name="id" id="id" required>
+            </div>
+            
+            <div id="name" class="fields">
+                <label for="name">Enter Your Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div id="adress" class="fields">
+                <label for="address">Enter Your address</label>
+                <input type="text" name="adress" id="adrees">
+            </div>
+            <div id="buttons" class="fields">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
